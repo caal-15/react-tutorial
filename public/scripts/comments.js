@@ -97,7 +97,7 @@ var CommentForm = React.createClass({
   render: function() {
     return (
       <div className="commentForm" onSubmit={this.handleSubmit}>
-        Hello, world... I am an ataraxic CommentForm :|.
+        <h1>Hello, world... I am an ataraxic CommentForm :|.</h1>
         <form class="commentForm">
           <input
             type="text"
@@ -105,13 +105,13 @@ var CommentForm = React.createClass({
             value={this.state.author}
             onChange={this.handleAuthorChange}
           /> <br />
-          <input
-            type="text"
+          <textarea
+            cols="60" rows="60"
             placeholder="Your valuable opinion"
             value={this.state.text}
             onChange={this.handleTextChange}
-          /> <br />
-        <input type="submit" value="Post" />
+          />
+          <br /><input type="submit" value="Post" />
         </form>
       </div>
     );

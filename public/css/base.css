@@ -1,62 +1,109 @@
-body {
-  background: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #2B525E;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.commentBox h1, h2 {
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 10px 0px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.commentBox h1 {
+  background-color: #2B525E;
   margin: 0;
-  padding: 30px;
 }
 
-a {
-  color: #4183c4;
-  text-decoration: none;
+.commentBox h2 {
+  background-color: #487372;
+  margin: 10;
 }
 
-a:hover {
-  text-decoration: underline;
+.commentForm h1 {
+  background-color: #2B525E;
+  border-radius: 10px 10px 0px 0px;
+  margin: 10px 0px;
 }
 
-code {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
-  font-size: 12px;
-  margin: 0 2px;
-  padding: 0px 5px;
+.commentForm input[type=text], textarea{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-h1, h2, h3, h4 {
-  font-weight: bold;
-  margin: 0 0 15px;
-  padding: 0;
+.commentForm input[type=text]:focus, textarea:focus {
+  border: 1px solid #3B3B3B;
 }
 
-h1 {
-  border-bottom: 1px solid #ddd;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin: 0 0 15px;
-  padding: 0;
+.commentForm input[type=text]{
+  height: 25px;
 }
 
-h2 {
-  border-bottom: 1px solid #eee;
-  font-size: 2em;
+.commentForm textarea{
+  height: 100px;
 }
 
-h3 {
-  font-size: 1.5em;
+.commentForm input[type=submit]{
+  border: 2px solid #2B525E;
+  background-color: #2B525E;
+  border-radius: 4px;
+  padding: 0px;
+  color: white;
+  height: 25px;
+  width: 10%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-h4 {
-  font-size: 1.2em;
+.commentForm input[type=submit]:hover{
+  background-color: white;
+  color: #2B525E;
 }
 
-p, ul {
-  margin: 15px 0;
-}
-
-ul {
-  padding-left: 30px;
+body {
+  background-color: #CFE0E6;
 }
